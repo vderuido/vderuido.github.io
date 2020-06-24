@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Sobre V de Ruido</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="index.html"><h2>Víctor de Tejada</h2></a>
+      <p> </p>
+      <div class="app-header-social">
+        
+      </div>
+	  CV:<br>
+	  <a href="victor_deTejada.pdf">Currículum</a>
+	  <br><br>
+	  Proyectos:<br>
+	  <a href="https://github.com/vderuido">Github</a><br>
+	  | <a href="documentos.html">Documentos</a> | <a href="blog.html">Blog</a> |
+	  <br><br>
+	  Contacto:<br>
+	  vdetejada@protonmail.com
+	  <br><br>
+	  <a href="about.html">Sobre mí</a>
+	  <br>
+	  <a href="conduct.html">Código de Conducta</a>
+	  <br>	
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+  	<h2 id="cómo-hacer-tus-presentaciones-online-sin-gastarte-un-duro-o-una-introducción-básica-a-obs-studio">Cómo hacer tus presentaciones online sin gastarte un duro (<em>o una introducción básica a OBS-Studio</em>)</h2>
+<p>Durante esta situación muchas cosas han cambiado. Entre ellas la forma de hacer presentaciones en público.</p>
+<p>Ya sea en colegios, universidades o e incluso en el trabajo, nos hemos visto obligados a cambiar las actividades presenciales, por telemáticas. Esto puede ser una faena para mucha personas que pueden estar un poco verdes en esto de los ordenadores, o bien es algo que no han hecho nunca.</p>
+<p>Para solucionarlo, voy a presentar una forma sencilla y económica para que las personas que lo necesiten puedan preparar sus clases online, sus cursos o ese típico trabajo de universidad en el que tienes que grabarte. ¡Vamos allá!</p>
+<h3 id="material-necesario">Material necesario</h3>
+<p>Las cosas que necesitamos son las siguientes:</p>
+<ul>
+<li>Un ordenador (obvio).</li>
+<li>Un micrófono.</li>
+<li>Una cámara (la webcam vale).</li>
+<li><a href="https://libreoffice.org">Libreoffice</a> o cualquier programa de presentaciones.</li>
+<li><a href="https://obsproject.com/">OBS-Studio</a> (programa para hacer la grabación/streaming de tu presentación)</li>
+</ul>
+<h3 id="preparando-la-presentación">Preparando la presentación</h3>
+<p>Lo primero que tenemos que hacer es asegurarnos que nuestro ordenador, nuestro micro y nuestra cámara funciona, así como tener nuestra presentación lista. ¿Lo tienes? Pues seguimos.</p>
+<h3 id="configurar-obs-studio">Configurar OBS-Studio</h3>
+<p>OBS-Studio (o simplemente OBS) es un programa gratuito y libre que nos permite crear nuestro propio estudio de televisión, o al menos simplificado, en casa. Este programa es muy utilizado por youtubers y empresas profesionales por su gran capacidad de opciones… pero también por su simplifidad para hacer cosas “profesionales” en pocos clicks.</p>
+<p>Lo primera vez que abramos el programa nos preguntará para qué lo vamos a usar: para streaming o para grabaciones. De esta forma, lo configurará automáticamente el programa de acuerdo a las características de nuestro ordenador para tener la mejor calidad. ¡Ojo, esto no quiere decir que no puedas hacer la otra opción! Podrás hacer ambas escojas lo que escojas. La decisión depende de para qué vayas a usar el programa.</p>
+<p>Una vez que el programa haya hecho su magia tendremos una cosa así:</p>
+<figure>
+<img src="docs/pictures/obs_inicial.jpg" width="100%" /><figcaption>Pantalla inicial de OBS</figcaption>
+</figure>
+<p>Como podéis ver, el programa está dividido en una pantalla negra (en la que se verá nuestra presentación) y una serie de módulos.</p>
+<p>El módulo <em>Scene</em> fija un tipo de “escena”. Es decir, lo que se ve en un determinado momento. Cada escena está formada por una o más fuentes (<em>Sources</em>) que pueden ser de vídeo o de audio. Estás últimas se controlan en el mezclador o <em>mixer</em>. Por último, puedes cambiar entre escenas usando el <em>Scene Transitions</em>.</p>
+<p>El último módulo está destinado para los ajustes y el inicio y fin del streaming y de la grabación. También nos permite entrar en el “modo studio” que nos permite cambiar fácilmente entre escenas, pero sale del objetivo de este texto.</p>
+<h3 id="creando-el-entorno">Creando el entorno</h3>
+<p>Lo primero que tenemos que hacer es crear una nueva escena (o renombrarla con un nombre que nos diga algo útil). Para ello, sólo hay que pinchar en el “+” de la parte inferior y ponerle un nombre orginal como “Presentaciones” (cáptese la ironía).</p>
+<p>El siguiente paso consiste en añadir las fuentes necesarias. Al igual que con las escenas, pinchamos en el “+” y nos saldrá un desplegable con multitud de opciones. Como el tiempo de ambos es importante, voy a decir cuáles necesitamos exactamente para hacer la presentación.</p>
+<p>Las fuentes que necesitamos son <em>Window Capture</em> y <em>Video Capture Device</em> que nos permitirán visualizar nuestra presentación y nuestra cara respectivamente. El audio aparecerá automáticamente en el mezclador dentro de la categoría Mic/Aux de forma automática. Si no aparece, selecciona la rueda de ajustes, pincha en propiedades y selecciona el dispositivo de tu micrófono. Sabrás que lo has hecho bien porque “la barra del volumen” (perdonadme profesores) empieza a moverse según hablas.</p>
+<p>Cuando seleccionemos las diferentes fuentes tendremos que escoger la ventana y la cámara. Por supuesto, ¡tienen que estar abierta y conectada respectivamente! Este programa es una maravilla, pero aún no tiene la capacidad de predecir qué vamos a querer utilizar. Si vamos a utilizar una cámara que no venga integrada con nuestro ordenador, es posible que no la detecte a la primera. Para solucionar esto, reinicia el ordenador con la cámara conectada y listo.</p>
+<figure>
+<img src="docs/pictures/seleccionar_ventana.jpg" width="100%" /><figcaption>Pantalla de selección de ventana (el modo presentación es una ventana distinta a la de edición)</figcaption>
+</figure>
+<p>Una vez tengamos seleccionadas todas las fuentes y nos hayamos asegurado de que el micro funciona, es el momento de componer la escena para que quede algo bonito. Lo más habitual es que nuestra cara esté en pequeño en una de las esquinas, mientras que la presentación ocupa la mayoría del espacio. Para ello, tenemos que asegurarnos de que la fuente de la cámara está encima de la de la presentación. Esto se hace seleccionando una de las fuentes y moviéndola con las flechas de la esquina inferior. Una vez colocadas, podemos ajustar el tamaño y la posición pinchando y arrastrando de los bordes rojos que apareceran al pinchar en la fuente.</p>
+<figure>
+<img src="docs/pictures/montaje.jpg" width="100%" /><figcaption>Presentación montada (con una versión artística de mí)</figcaption>
+</figure>
+<h3 id="listos-para-grabar">¡Listos para grabar!</h3>
+<p>Una vez lo tienes todo configurado, y has regulado la ganancia del audio para que no sature (que no llegue a la zona roja), es hora de grabar.</p>
+<p>Si vas a hacer una emisión tendrás que configurar previamente la dirección a la que quieras hacerlo, incluido youtube. Configurarlo depende de la plataforma que utilices, pero no suele variar de una determinada URL que añadir en los ajustes de emisión. Si vas a grabar para subirlo después, selecciona en qué carpeta quieres que se grabe el archivo así como el formato (o deja los automáticos y que el mundo te sorprenda).</p>
+<p>Escoge tu opción, dale a grabar y cuando termines, dale a <em>Stop</em> y ¡listo!</p>
+<h3 id="nota-de-un-casi-ingeniero-de-sonido-e-imagen">Nota de un <em>casi</em> ingeniero de sonido e imagen</h3>
+<p>Los resultados finales dependen de los medios que utilicen. Una presentación puede ganar mucho si utilizas micros buenos y una buena cámara. Tienes que pensar a quién va dirigida tu presentación. De nada sirve gastarte una millonada en focos y cromas si la presentación está poco trabajada, o si el público está por obligación.</p>
+<p>Al final una buena importación es aquella en la que se te oye bien y la información se lee corréctamente y para eso, como puedes ver, no se necesita mucho.</p>
+
+     
+     
+      
+    <br><br>
+    <hr>
+    <p>Volver a la <a href="index.html">página principal</a>. </p>
+
+  </article>
+
+    </main>
+  
+
+</body></html>

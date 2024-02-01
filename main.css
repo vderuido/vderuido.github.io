@@ -1,13 +1,13 @@
 *{box-sizing:border-box}html{line-height:1.6}
 body{margin:0;
-font-family:ubuntu, "noto sans", sans-serif;
-background:#353b43;color:#afbac4}
+font-family:cantarell, "noto sans", sans-serif;
+background:#3D3846;color:#DEDDDA}
 h1,h2,h3,h4,h5,h6{color:#fff}
 h3{font-size:17px}
-a{color:#74A5E1;text-decoration:none}
-a:hover{color:#D875FF;transition:color .8s}
+a{color:#62A0EA;text-decoration:none}
+a:hover{color:#C061CB;transition:color .8s}
 pre{overflow:auto}
-.app-header{padding:2.5em;background:#242930;text-align:center}
+.app-header{padding:2.5em;background:#241F31;text-align:center}
 .app-header-avatar{max-width:15rem;max-height:15rem;border-radius:100%;border:.5rem solid #57cc8a}
 .app-container{padding:2.5rem}
 .app-header-social{font-size:2em;color:#fff}
